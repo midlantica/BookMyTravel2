@@ -10,3 +10,9 @@ Router.route('/', {
   controller: 'HomeController',
   where: 'client'
 });
+
+Router.route('create_travel', {
+  name: 'createTravel',
+  controller: 'CreateTravelController',
+  where: 'client'
+});

@@ -1,0 +1,18 @@
+<template name="CreateTravelLayout">
+  <div class="create-container">
+    <header class="header">
+      <h1>
+        {{#linkTo route="home"}}
+          BookMyTravel2
+        {{/linkTo}}
+      </h1>
+      <ul class="nav nav-pills">
+        <li>{{#linkTo route="home"}}List{{/linkTo}}</li>
+      </ul>
+    </header>
+    <section class="create-container__section">
+      {{> yield}}
+    </section>
+    <footer class="footer">Copyright @BookMyTravel2</footer>
+  </div>
+</template>

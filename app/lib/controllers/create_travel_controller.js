@@ -1,4 +1,6 @@
-HomeController = RouteController.extend({
+CreateTravelController = RouteController.extend({
+
+  layoutTemplate: 'CreateTravelLayout',
 
   // A place to put your subscriptions
   // this.subscribe('items');

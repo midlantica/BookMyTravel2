@@ -1,0 +1,19 @@
+<template name="CreateTravel">
+  <div class="create-travel">
+    <h1>Find me in app/client/templates/create_travel/create_travel</h1>
+
+    {{#autoForm collection="Busservice" id="CreateBusServiceForm" type="method" class="container" meteormethod="createBusService"}}
+      {{> afQuickField name='name'}}
+      {{> afQuickField name='agency'}}
+      {{> afQuickField name='seats' min="10" max="50"}}
+      {{> afQuickField name='source'}}
+      {{> afQuickField name='destination'}}
+      {{> afQuickField name='startDateTime' type="datetime-local"}}
+      {{> afQuickField name='endDateTime' type="datetime-local"}}
+      {{> afQuickField name='fare'}}
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+    {{/autoForm}}
+
+  </div>
+</template>
+
